@@ -1,0 +1,44 @@
+// === Imports ===
+@import './variables.scss';
+@import './fonts.scss';
+@import './mixins.scss';
+@import './normalize.scss';
+// === / Imports ===
+//----------------------------------------------------------------------------
+// === Common ===
+html {
+  font-size: $fontSizeDeafault;
+}
+
+a {
+  color: $dark;
+}
+
+body {
+  @include font-Alegreya-Regular;
+  font-size: 14px;
+  line-height: $line-height-100p;
+  background-color: $primaryLight;
+  color: $dark;
+}
+
+.section-outer {
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow: hidden;
+
+  @media screen and (max-width: $tablet) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.position-fixed {
+  position: fixed;
+  z-index: $z-index-header;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+// === / Common ===
+//============================================================================
